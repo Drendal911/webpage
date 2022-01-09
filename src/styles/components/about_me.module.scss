@@ -1,0 +1,66 @@
+@import "../abstracts/variables";
+
+.grid_container {
+  display: grid;
+  grid-template-columns: [first] 35rem [second] 1fr;
+  margin: 1.5rem 1.5rem 2.5rem 1.5rem;
+
+  & img {
+    width: 30rem;
+    box-shadow: 0.5rem 0.5rem black;
+  }
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 650;
+  grid-column: span 2;
+  justify-self: center;
+}
+
+.sub_title {
+  font-weight: 650;
+  margin: 1rem;
+}
+
+.image_container {
+  align-self: center;
+  justify-self: center;
+}
+
+.text_container {
+  font-size: 1.5rem;
+  text-align: left;
+  align-self: center;
+  justify-self: center;
+}
+
+.button_div {
+  grid-column: span 2;
+}
+
+@media screen and (max-width: 1023px) {
+  .grid_container {
+    grid-template-columns: 1fr;
+    grid-row-gap: .5rem;
+    margin: .5rem;
+
+    & img {
+      width: 20rem;
+    }
+  }
+
+  .text_container {
+    padding: 0;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .title {
+    grid-column: span 1;
+  }
+
+  .button_div {
+    grid-column: span 1;
+  }
+}

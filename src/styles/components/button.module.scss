@@ -1,0 +1,35 @@
+@import "../abstracts/variables";
+
+%rectangle-btn-placeholder {
+  padding: 1rem;
+  display: inline-block;
+  border-radius: 1rem;
+  text-align: center;
+  width: 14rem;
+  margin: 2rem .5rem 1rem .5rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Roboto, sans-serif;
+  font-size: 1.25rem;
+  transition: all .05s;
+  &:hover {
+    transform: translate(-.2rem, -.2rem);
+    box-shadow: .5rem .5rem 1.5rem rgb(49, 47, 47);
+  }
+  &:active {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+}
+
+.dark_rectangle_btn {
+  @extend %rectangle-btn-placeholder;
+  color: #dcdcdc;
+  background-color: #222222;
+}
+
+@media screen and (max-width: 1025px) {
+  .dark_rectangle_btn {
+    @include no-hover-no-active;
+  }
+}

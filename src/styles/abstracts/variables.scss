@@ -1,0 +1,29 @@
+$color-light: #dcdcdc;
+$color-dark: #222222;
+@mixin shadow {
+  box-shadow: .5rem .5rem 1rem;
+}
+
+@mixin no-hover-no-active {
+  &:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  &:active {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+%btn-hover-active {
+  transition: all .25s;
+  &:hover {
+    transform: translate(-.2rem, -.2rem);
+    box-shadow: .5rem .5rem 1.5rem rgb(49, 47, 47);
+  }
+  &:active {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+}
+

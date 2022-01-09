@@ -1,0 +1,57 @@
+@import "../abstracts/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  text-align: center;
+}
+
+.all_icons_container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon_container {
+  width: 5rem;
+}
+
+.position_container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.contact {
+  color: white;
+  margin: 0 auto 2rem auto;
+  & .title {
+    font-size: 3rem;
+    padding-top: 1rem;
+  }
+  & a {
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1025px){
+  .contact {
+    margin: 0 auto 2rem auto;
+    & .title {
+      font-size: 2rem;
+    }
+    & a {
+      color: white;
+      text-decoration: none;
+      font-style: normal;
+      font-size: 1.5rem;
+    }
+  }
+
+}

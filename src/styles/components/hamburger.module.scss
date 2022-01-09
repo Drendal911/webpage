@@ -1,0 +1,153 @@
+@import "../abstracts/variables";
+@import '../abstracts/animations';
+
+
+.navigation {
+
+  &Checkbox {
+    position: fixed;
+    top: .6rem;
+    right: .4rem;
+    z-index: 100;
+    height: 4.8rem;
+    width: 4.8rem;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  &Checkbox:checked ~ &Background {
+    transform: scale(12);
+    transition: all .25s;
+    opacity: 95%;
+  }
+  &Checkbox:not(:checked) ~ &Background {
+    transition: all .25s;
+  }
+  &Checkbox:checked ~ &Nav {
+    transition-delay: .25s;
+    opacity: 1;
+    width: 100%;
+  }
+  &Checkbox:not(:checked) ~ &Nav {
+    opacity: 0;
+    z-index: -1;
+  }
+  &Checkbox:checked + &Button {
+    transition: all .25s;
+    box-shadow: none;
+    background-image: none;
+    background-color: transparent;
+  }
+  &Checkbox:checked + &Button &Icon {
+    transition: all .25s;
+    background-color: transparent;
+  }
+  &Checkbox:checked + &Button &Icon::before {
+    transition: all .25s;
+    transform: rotate(45deg);
+    top: 0;
+  }
+  &Checkbox:checked + &Button &Icon::after {
+    transition: all .25s;
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  &Checkbox:not(:checked) + &Button &Icon {
+    transition: all .35s;
+  }
+  &Checkbox:not(:checked) + &Button &Icon::before {
+    transition: all .25s;
+  }
+  &Checkbox:not(:checked) + &Button &Icon::after {
+    transition: all .25s;
+  }
+
+  &Button {
+    background-color: $color-light;
+    height: 4.5rem;
+    width: 4.5rem;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 50%;
+    box-shadow: .3rem .3rem 2rem;
+    z-index: 20;
+    text-align: center;
+    animation: fadeIn 1.75s;
+  }
+
+  &Background {
+    opacity: 0;
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 10;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 30%;
+    background-image: radial-gradient($color-light, $color-dark);
+  }
+
+  &Nav {
+    position: fixed;
+    top: 1.5rem;
+    right: -2.5rem;
+    z-index: 15;
+  }
+
+  &Link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-size: 3rem;
+      font-weight: 475;
+      color: $color-dark;
+      text-decoration: none;
+      background-size: 240%;
+      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-light 50%);
+      transition: all .25s;
+      border-radius:.4rem;
+    }
+    &:hover,
+    &:active {
+      background-position: 100%;
+      transform: translate(-.3rem, -.3rem);
+      @include shadow;
+    }
+  }
+  &List {
+    position: absolute;
+    top: 0rem;
+    right: 7.8rem;
+    text-align: center;
+    list-style: none;
+  }
+  &Item {
+    margin-bottom: .5rem ;
+  }
+
+  &Icon {
+    position: relative;
+    margin-top: 2.25rem;
+
+    &,
+    &::before,
+    &::after {
+      width: 2rem;
+      height: 2px;
+      background-color: $color-dark;
+      display: inline-block;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+    }
+
+    &::before { top: -.55rem; }
+    &::after { top: .55rem; }
+  }
+
+}

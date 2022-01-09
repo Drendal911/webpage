@@ -1,0 +1,42 @@
+@import '../abstracts/animations';
+
+.myHeader {
+  position: relative;
+  height: 100vh;
+  background-image: url("../../images/darkdesk-laptop-phone-pen-notebook.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.headerContentContainer {
+  position: absolute;
+  top: 70%;
+  left: 7%;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+  Bitstream Vera Sans Mono, Courier New, monospace;
+  color: #dcdcdc;
+}
+
+.mainHeader {
+  font: 7.5rem "Dancing Script";
+  animation: moveInLeft 1.75s;
+}
+
+.mainHeader__subOne {
+  font: 6.75rem "Freestyle Script";
+  animation: moveInRight 1.75s;
+}
+
+@media screen and (max-width: 521px) {
+  .mainHeader {
+    font: 4.75rem "Dancing Script";
+    animation: moveInLeft 1.75s;
+  }
+
+  .mainHeader__subOne {
+    font: 4.25rem "Freestyle Script";
+    animation: moveInRight 1.75s;
+  }
+}
