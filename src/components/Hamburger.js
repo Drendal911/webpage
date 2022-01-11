@@ -16,7 +16,7 @@ export default function Hamburger() {
 
                 <nav className={hamburger.navigationNav}>
                     <ul className={hamburger.navigationList}>
-                        <li onClick={hideMenu} className={hamburger.navigationItem}><a href={"#"} className={hamburger.navigationLink}>Home</a></li>
+                        <li onClick={hideMenu} className={hamburger.navigationItem}><a href={"# "} className={hamburger.navigationLink}>Home</a></li>
                         <li onClick={hideMenu} className={hamburger.navigationItem}><a href={"#about"} className={hamburger.navigationLink}>About Me</a></li>
                         <li onClick={hideMenu} className={hamburger.navigationItem}><a href={"#skills"} className={hamburger.navigationLink}>Skills</a></li>
                         <li onClick={hideMenu} className={hamburger.navigationItem}><a href={"#projects"} className={hamburger.navigationLink}>Projects</a></li>

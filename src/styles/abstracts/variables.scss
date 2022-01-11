@@ -16,7 +16,7 @@ $color-dark: #222222;
 }
 
 %btn-hover-active {
-  transition: all .25s;
+  transition: all .1s;
   &:hover {
     transform: translate(-.2rem, -.2rem);
     box-shadow: .5rem .5rem 1.5rem rgb(49, 47, 47);

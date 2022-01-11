@@ -1,0 +1,104 @@
+@import "../abstracts/variables";
+
+.grid_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin: 1.5rem 1.5rem 2.5rem 1.5rem;
+  grid-row-gap: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 650;
+  grid-column: span 6;
+  justify-self: center;
+  align-self: center;
+}
+
+.icon_container {
+  max-width: 8.5rem;
+  max-height: 8.5rem;
+  border-radius: .5rem;
+  overflow: hidden;
+  align-self: center;
+  @extend %btn-hover-active;
+}
+
+.wrapper {
+  position: relative;
+
+  &:hover .more_icon_container{
+    opacity: 0;
+    transition: .1s;
+    transform: rotateY(180deg);
+    background-color: black;
+  }
+  &:hover .more_icon_reverse_side {
+    opacity: 1;
+    z-index: 2;
+    transform: rotateY(180deg);
+    direction: rtl;
+    transition: .7s;
+  }
+
+  &:hover .reverse_icon_text{
+    transform: rotateY(180deg);
+  }
+}
+
+.more_icon_container {
+  max-width: 8.5rem;
+  border-radius: .5rem;
+  overflow: hidden;
+  transition: all .5s;
+
+}
+
+.more_icon_reverse_side {
+  position: absolute;
+  top: 0;
+  left: 3.5rem;
+  padding: 1rem;
+  max-width: 8.5rem;
+  height: 8.5rem;
+  border-radius: .5rem;
+  opacity: 0;
+  color: white;
+  background-color: black;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+
+@media screen and (max-width: 1025px) {
+  .icon_container {
+    @include no-hover-no-active;
+  }
+
+  .wrapper {
+    pointer-events: none;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .title {
+    grid-column: span 3;
+  }
+
+  .grid_container {
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .icon_container {
+    max-width: 5.5rem;
+    max-height: 5.5rem;
+  }
+
+  .more_icon_container {
+    max-width: 5.5rem;
+    max-height: 5.5rem;
+  }
+}
