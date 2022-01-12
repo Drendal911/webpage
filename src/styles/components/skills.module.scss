@@ -57,7 +57,7 @@
 .more_icon_reverse_side {
   position: absolute;
   top: 0;
-  left: 3.5rem;
+  left: 4rem;
   padding: 1rem;
   max-width: 8.5rem;
   height: 8.5rem;
@@ -68,7 +68,6 @@
   font-size: 1.5rem;
   font-weight: 500;
 }
-
 
 @media screen and (max-width: 1025px) {
   .icon_container {
@@ -100,5 +99,36 @@
   .more_icon_container {
     max-width: 5.5rem;
     max-height: 5.5rem;
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  .more_icon_reverse_side {
+    left: 3rem;
+  }
+}
+@media screen and (min-width: 1325px) {
+  .more_icon_reverse_side {
+    left: 2rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .more_icon_reverse_side {
+    left: 3rem;
+  }
+}
+@media screen and (min-width: 1650px) {
+  .more_icon_reverse_side {
+    left: 4.5rem;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .more_icon_reverse_side {
+    left: 6rem;
+  }
+}
+@media screen and (min-width: 2150px) {
+  .more_icon_reverse_side {
+    left: 7rem;
   }
 }
