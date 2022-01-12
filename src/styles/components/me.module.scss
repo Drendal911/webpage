@@ -2,8 +2,9 @@
 
 .grid_container {
   display: grid;
-  grid-template-columns: [first] 35rem [second] 1fr;
+  grid-template-columns: 35rem 1fr;
   margin: 1.5rem 1.5rem 2.5rem 1.5rem;
+  row-gap: 2rem;
 
   & img {
     width: 30rem;
@@ -47,7 +48,7 @@
     margin: .5rem;
 
     & img {
-      width: 20rem;
+      width: 40rem;
     }
   }
 
@@ -63,5 +64,21 @@
 
   .button_div {
     grid-column: span 1;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .grid_container {
+    & img {
+      width: 30rem;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .grid_container {
+    & img {
+      width: 20rem;
+    }
   }
 }

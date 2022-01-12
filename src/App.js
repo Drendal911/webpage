@@ -4,6 +4,7 @@ import Hamburger from "./components/Hamburger";
 import SectionCard from "./components/SectionCard";
 import AboutMe from "./components/AboutMe"
 import Skills from "./components/Skills";
+import Work from "./components/Work";
 import Footer from "./components/layout/Footer";
 
 
@@ -17,6 +18,7 @@ function App() {
                 <div className={app.content_wrap}>
                     <SectionCard content={<AboutMe/>}/>
                     <SectionCard content={<Skills/>}/>
+                    <SectionCard content={<Work/>}/>
 
                     <Footer title={"Contact Me"}
                             email={"hoguequentin@hotmail.com"}/>

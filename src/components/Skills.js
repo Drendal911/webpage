@@ -10,15 +10,11 @@ import nodejsIcon from '../images/icons/nodejs_icon.png'
 import expressjsIcon from '../images/icons/expressjs_icon.png'
 import mongodbIcon from '../images/icons/mongodb_icon.png'
 import dynamodbIcon from '../images/icons/dynamodb_icon.png'
-
 import moreIcon from '../images/icons/more.png'
-// import {javaIcon, javascriptIcon, html5Icon, css3Icon, sassIcon, reactIcon, nextjsIcon, nodejsIcon, expressjsIcon,
-//     mongoosejsIcon, mongodbIcon, jdbcIcon, sqlIcon, mysqlIcon, dynamodbIcon, moreIcon} from "/images/index"
-
 
 export default function Skills() {
     return (
-        <div className={skills.grid_container}>
+        <div id={"skills"} className={skills.grid_container}>
             <div className={skills.title}>My Skills</div>
             <a href={'https://developer.mozilla.org/en-US/docs/Web/JavaScript'} target={'_blank'}
                rel="noopener noreferrer">
