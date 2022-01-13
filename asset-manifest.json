@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/webpage/static/css/main.ac4c03bc.css",
-    "main.js": "/webpage/static/js/main.4a9c1d82.js",
+    "main.js": "/webpage/static/js/main.5a01ae85.js",
     "static/js/787.51eb71bf.chunk.js": "/webpage/static/js/787.51eb71bf.chunk.js",
     "static/media/monitor-on-desk.jpg": "/webpage/static/media/monitor-on-desk.6f6cc446ef57cefe3c77.jpg",
     "static/media/darkdesk-laptop-phone-pen-notebook.jpg": "/webpage/static/media/darkdesk-laptop-phone-pen-notebook.ae3b937fcad9a5057e9d.jpg",
@@ -17,11 +17,11 @@
     "static/media/expressjs_icon.png": "/webpage/static/media/expressjs_icon.9b344d7469dbbdc76754.png",
     "index.html": "/webpage/index.html",
     "main.ac4c03bc.css.map": "/webpage/static/css/main.ac4c03bc.css.map",
-    "main.4a9c1d82.js.map": "/webpage/static/js/main.4a9c1d82.js.map",
+    "main.5a01ae85.js.map": "/webpage/static/js/main.5a01ae85.js.map",
     "787.51eb71bf.chunk.js.map": "/webpage/static/js/787.51eb71bf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ac4c03bc.css",
-    "static/js/main.4a9c1d82.js"
+    "static/js/main.5a01ae85.js"
   ]
 }
