@@ -18,8 +18,7 @@ export default function Work() {
                         <div className={work.sub_title}>Employee Management System</div>
                         <p>An example management system that tracks employee compensation. The front-end is based on
                             React.js/Next.js. It sends REST API requests to a Nodejs/Express/Mongoose web server.
-                            Data is stored in a MongoDB Atlas(Cloud) database. The front/back-end are loosely coupled
-                            and either could be swapped with different s in the future. Try it out!.</p>
+                            Data is stored in a MongoDB Atlas(Cloud) database.</p>
                     </div>
                     <div className={work.button_div}>
                         <Button css={button.dark_rectangle_btn}
