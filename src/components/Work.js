@@ -1,5 +1,6 @@
 import work from '../styles/components/work.module.scss'
 import empImage from '../images/EmployeeManagementSystemMainScreen.png'
+import stock from '../images/stocks_graph.jpg'
 import ref from '../images/basketball-referee-mid-court.jpg'
 import button from "../styles/components/button.module.scss";
 import Button from "./Button";
@@ -9,6 +10,24 @@ export default function Work() {
         <div id={"work"} className={work.grid_container}>
             <div>
                 <div className={work.title}>My Work</div>
+                <div className={work.grid_sub_container}>
+                    <a href={'https://drendal911.github.io/stock-watcher/'} target={'_blank'}
+                       rel="noopener noreferrer">
+                        <img src={stock} alt={"Stock Watcher"}/>
+                    </a>
+                    <div className={work.text_container}>
+                        <div className={work.sub_title}>Stock Watcher</div>
+                        <p>A website designed to help keep an eye on stock prices. The front-end if made with React. The back-end is powered by a Node.js AWS Lambda function that sends requests for stock data to a third-party API.</p>
+                    </div>
+                    <div className={work.button_div}>
+                        <Button css={button.dark_rectangle_btn}
+                                link={"https://drendal911.github.io/stock-watcher/"}
+                                name={"Stock Watcher"}/>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div>
                 <div className={work.grid_sub_container}>
                     <a href={'https://drendal911-employee-front-end.herokuapp.com'} target={'_blank'}
                        rel="noopener noreferrer">

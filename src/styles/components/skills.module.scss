@@ -1,5 +1,10 @@
 @import "../abstracts/variables";
 
+figcaption{
+  padding-bottom: .25rem;
+  font-style: italic;
+}
+
 .grid_container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
