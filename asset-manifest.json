@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "/webpage/static/css/main.dc579b4a.css",
-    "main.js": "/webpage/static/js/main.6bd86928.js",
+    "main.css": "/webpage/static/css/main.e76584a3.css",
+    "main.js": "/webpage/static/js/main.6c5a87b4.js",
     "static/js/787.51eb71bf.chunk.js": "/webpage/static/js/787.51eb71bf.chunk.js",
     "static/media/monitor-on-desk.jpg": "/webpage/static/media/monitor-on-desk.6f6cc446ef57cefe3c77.jpg",
     "static/media/darkdesk-laptop-phone-pen-notebook.jpg": "/webpage/static/media/darkdesk-laptop-phone-pen-notebook.ae3b937fcad9a5057e9d.jpg",
     "static/media/Quentin.jpg": "/webpage/static/media/Quentin.b09686adddeafd23ce4a.jpg",
+    "static/media/stocks_graph.jpg": "/webpage/static/media/stocks_graph.4540f3cbf87e3d8edf20.jpg",
     "static/media/facebook-logo-white.png": "/webpage/static/media/facebook-logo-white.df322f48c51089c449ee.png",
     "static/media/EmployeeManagementSystemMainScreen.png": "/webpage/static/media/EmployeeManagementSystemMainScreen.58781c5230397bba260c.png",
     "static/media/basketball-referee-mid-court.jpg": "/webpage/static/media/basketball-referee-mid-court.d312458410d221427cd0.jpg",
     "static/media/html5_icon.png": "/webpage/static/media/html5_icon.91c24f93ff8755047a4d.png",
     "static/media/css3_icon.png": "/webpage/static/media/css3_icon.8890515968c8df2fec4a.png",
     "static/media/react_icon.png": "/webpage/static/media/react_icon.35639ed930462bfcd544.png",
-    "static/media/java_icon.png": "/webpage/static/media/java_icon.f4ea765878d6e68edefd.png",
     "static/media/mongodb_icon.png": "/webpage/static/media/mongodb_icon.93c6a527b6876ef04219.png",
+    "static/media/jest_icon.png": "/webpage/static/media/jest_icon.23770b8c707d5005a9b0.png",
     "static/media/expressjs_icon.png": "/webpage/static/media/expressjs_icon.9b344d7469dbbdc76754.png",
     "index.html": "/webpage/index.html",
-    "main.dc579b4a.css.map": "/webpage/static/css/main.dc579b4a.css.map",
-    "main.6bd86928.js.map": "/webpage/static/js/main.6bd86928.js.map",
+    "main.e76584a3.css.map": "/webpage/static/css/main.e76584a3.css.map",
+    "main.6c5a87b4.js.map": "/webpage/static/js/main.6c5a87b4.js.map",
     "787.51eb71bf.chunk.js.map": "/webpage/static/js/787.51eb71bf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc579b4a.css",
-    "static/js/main.6bd86928.js"
+    "static/css/main.e76584a3.css",
+    "static/js/main.6c5a87b4.js"
   ]
 }
