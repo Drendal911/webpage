@@ -17,7 +17,7 @@ export default function Work() {
                     </a>
                     <div className={work.text_container}>
                         <div className={work.sub_title}>Stock Watcher</div>
-                        <p>A website designed to help keep an eye on stock prices. The front-end if made with React. The back-end is powered by a Node.js AWS Lambda function that sends requests for stock data to a third-party API.</p>
+                        <p>A website designed to help the casual observer keep an eye on stock prices. The front-end is made with React.js. The back-end is powered by an AWS API Gateway and AWS Lambda(Node.js) function that receives stock data from a third-party API.</p>
                     </div>
                     <div className={work.button_div}>
                         <Button css={button.dark_rectangle_btn}
@@ -55,7 +55,7 @@ export default function Work() {
                     </a>
                     <div className={work.text_container}>
                         <div className={work.sub_title}>Referee Association Website</div>
-                        <p>A personal website built with React, HTML, and SCSS. The site simply lists the referee
+                        <p>A personal website built with React.js, HTML, and SCSS. The site simply lists the referee
                             associations my brother is affiliated with.</p>
                     </div>
                     <div className={work.button_div}>

@@ -12,7 +12,7 @@ export default function Footer(props) {
                     {props.email ? <address><a href={`mailto:${props.email}`}>{props.email}</a></address> : null}
                 </div>
                 <div className={footer.all_icons_container}>
-                    <a href="https://www.linkedin.com/in/quentin-h-200591187/" target="_blank"
+                    <a href="https://www.linkedin.com/in/qnhogue/" target="_blank"
                        rel="noopener noreferrer" className={footer.icon_container}>
                         <img src={linkedInIcon} width="33px" alt={"LinkedIn Icon"}/>
                     </a>
